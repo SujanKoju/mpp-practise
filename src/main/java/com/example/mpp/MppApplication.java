@@ -21,6 +21,14 @@ public class MppApplication {
 
         int[] testArray = new int[]{5, 1};
         System.out.println("--- Test for sum result :" + Mpp.testForSum(testArray, 88));
+
+
+        LinkedList<String> list = new LinkedList();
+        list.add( "sujan");
+        list.add( "koju");
+        list.printData();
+        System.out.println(list.isPresent("asd"));
+
         SpringApplication.run(MppApplication.class, args);
     }
 
