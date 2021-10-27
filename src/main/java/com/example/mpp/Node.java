@@ -6,5 +6,5 @@ package com.example.mpp;
 
 public class Node<T> {
  T data;
- Node next;
+ Node<T> next;
 }
