@@ -1,5 +1,6 @@
 package com.example.mpp;
 
+import com.example.mpp.ds.MyLinkedList;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -55,6 +56,7 @@ public class MppApplication {
         names.pop();
         names.print();
 */
+/*
 
         MyQueue<String> names = new MyQueue<>();
         names.enqueue("sujan");
@@ -71,6 +73,19 @@ public class MppApplication {
         names.dequeue();
         names.dequeue();
         names.print();
+*/
+        MyLinkedList<String> list = new MyLinkedList<>();
+        list.add("A");
+        list.add("B");
+        list.add("C");
+        list.add("D");
+        list.printData();
+
+        System.out.println("");
+
+        list.reverse(list.head);
+
+        list.printData();
 
         SpringApplication.run(MppApplication.class, args);
     }
